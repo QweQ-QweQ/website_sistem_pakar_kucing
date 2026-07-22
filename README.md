@@ -51,15 +51,20 @@ Sistem dapat melakukan diagnosis terhadap lima penyakit kulit kucing, yaitu:
 - masuk ke folder projek lalu buka terminal,
 ketik :
 cd website_sistem_pakar_kucing
+
 composer install
+
 npm install
+
 ubah".env.example" -> ".env"
+
 php artisan key:generate
 
 - kemudian buat database MYSQL dengan nama :
 sistem_pakar_kucing
 - Kemudian atur bagian database pada file .env:
 hapus semua tanda # di depan
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -68,13 +73,19 @@ DB_USERNAME=root
 DB_PASSWORD=
 
 - Selanjutnya, jalankan terminal dan ketik :
+
 php artisan migrate
+
 php artisan db:seed --class=SistemPakarSeeder
+
 php artisan serve
 
-- buka terminal baru
+
+- buka terminal baru, lalu ketik :
+
 npm.cmd run dev
 
 lalu Buka alamat yang muncul berikut pada browser :
+
 http://127.0.0.1:8000
 
