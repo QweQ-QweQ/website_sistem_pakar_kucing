@@ -1,0 +1,39 @@
+# Log dan Database
+*.log
+npm-debug.log
+yarn-error.log
+/database/database.sqlite
+/database/database.sqlite-journal
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.phpactor.json
+
+# Environment & Dependencies
+.env
+.env.backup
+.env.production
+/auth.json
+/vendor
+/node_modules
+Homestead.json
+Homestead.yaml
+
+# Cache & Build
+.phpunit.result.cache
+/.phpunit.cache
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+
+# Dokumen Proyek Eksternal (Opsional, agar repo bersih)
+*.pdf
+*.docx
